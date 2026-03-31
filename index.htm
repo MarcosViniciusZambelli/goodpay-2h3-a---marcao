@@ -11,7 +11,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/action.js"></script>
     <title>Goodpay</title>
 </head>
 
@@ -22,7 +21,7 @@
                 <ul class="menu">
                     <li>
                         <a href="#" class="active">
-                            <img src="./img/logo-goodpay.png" alt="Logo do site" width="40px" height="40px">
+                            <img src="./img/logo-goodpay.png" alt="Logo do site" width="44px" height="44px">
                         </a>
                     </li>
                     <li>
@@ -55,43 +54,48 @@
                     style="width: 100%">
                     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="correntDiv(1)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="correntDiv(2)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="correntDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-border-white" onclick="currentDiv(4)"></span>
+                </div>
+            </div>
+        </section>
+        <section name="cards-produtos">
+            <div class="w3-flex" style="gap: 10px;">
+                <div class="w3-container">
+                    <div class="w3-card-4 w3-center card">
+                        <h2>Promoção</h2>
+                        <img src="./img/card1.png" alt="card 1" width="100%">
+                        <div class="w3-container w3-center">
+                            <p>Promoçao: Cashback para jogar de novo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-card-4 w3-center card">
+                        <h2>Planejamento</h2>
+                        <img src="./img/card2.png" alt="card 1" width="100%">
+                        <div class="w3-container w3-center">
+                            <p>Promoçao: Paneje seu futuro para uma vida sem surpresas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-card-4 w3-center card">
+                        <h2>Economia sustentavel</h2>
+                        <img src="./img/card3.png" alt="card 1" width="100%">
+                        <div class="w3-container w3-center">
+                            <p>Promoçao: Goodpay patrocina microprodutores</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-
-            function currentDiv(n) {
-                showDivs(slideIndex = n);
-            }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
-                if (n > x.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = x.length }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                }
-                x[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " w3-white";
-            }
-        </script>
-    </footer>
+        <script src="./js/action.js"></script>
+    </footer>          
 </body>
 
 </html>
