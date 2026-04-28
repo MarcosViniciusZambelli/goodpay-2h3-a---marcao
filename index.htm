@@ -334,7 +334,8 @@
                             <i>Google Cloud Platform (GCP):</i> Garantimos alta disponibilidade, segurança de dados e
                             capacidade de processamento em nuvem. O GCP nos permite escalar o GoodPay de forma
                             sustentável, garantindo que a plataforma cresça junto com o nosso impacto social. <br>
-                            <i>Firebase:</i> Utilizamos o Firebase para gerenciar dados em tempo real, autenticação segura de
+                            <i>Firebase:</i> Utilizamos o Firebase para gerenciar dados em tempo real, autenticação
+                            segura de
                             usuários e integração ágil. Essa escolha tecnológica nos permite focar no que realmente
                             importa: a experiência do usuário e a entrega de valor, mantendo o sistema rápido e
                             confiável. <br>
@@ -347,12 +348,13 @@
             <div id="id02" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
                     <header class="w3-container w3-pale-green">
-                        <span class="w3-button w3-display-topright" onclick="document.getElementById('id02').style.display='none'">
+                        <span class="w3-button w3-display-topright"
+                            onclick="document.getElementById('id02').style.display='none'">
                             &times;
                         </span>
                         <h2>Registre-se no GoodPay</h2>
                     </header>
-                    <form action="" class="w3-container w3-padding-64">
+                    <form action="" class="w3-container w3-padding-64 goodpay-cadastro">
                         <p>
                             <input class="w3-input" type="text">
                             <label>Nome</label>
@@ -360,6 +362,34 @@
                         <p>
                             <input class="w3-input" type="text">
                             <label>Senha</label>
+                        </p>
+                        <p>
+                            <input class="w3-input" type="text">
+                            <label>E-mail</label>
+                        </p>
+                        <hr>
+                        <p>
+                            <select class="w3-select" id="regra">
+                                <option value="" disabled selected>Escolha um perfil</option>
+                                <option value="admin">Administrador</option>
+                                <option value="user">Usuário</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="radio" name="genero" id="genero" checked value="F" class="w3-radio">
+                            <label>Feminino</label>
+                            <input type="radio" name="genero" id="genero" value="M" class="w3-radio">
+                            <label>Masculino</label>
+                            <input type="radio" name="genero" id="genero" value="O" class="w3-radio">
+                            <label>Outro</label>
+                            <input type="radio" name="genero" id="genero" value="N" class="w3-radio">
+                            <label>Não Declarar</label>
+                        </p>
+                        <hr>
+                        <p>
+                            <button class="w3-btn w3-block w3-green">
+                                Enviar Cadastro
+                            </button>
                         </p>
                     </form>
                 </div>
