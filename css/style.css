@@ -1,0 +1,80 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-family: 'Poppins', 'Verdana', 'Arial';
+    max-width: 1090px;
+    background: #22C1C3;
+    background: -webkit-linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(191, 245, 147, 0.47) 75%);
+    background: -moz-linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(191, 245, 147, 0.47) 75%);
+    background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(191, 245, 147, 0.47) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22C1C3", endColorstr="#BFF593", GradientType=1);
+}
+
+h2,
+p {
+    margin: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.menu li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.menu li a.active {
+    background-color: #009929;
+    padding: 5px;
+    margin: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
+
+.banner {
+    max-width: 1090px;
+}
+
+.goodpay-card {
+    width: 100%;
+    max-width: 350px;
+    background-color: aliceblue;
+}
+.goodpay-faq{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
