@@ -34,7 +34,7 @@
                         <a href="#" onclick="document.getElementById('id02').style.display='block'">Cadastro</a>
                     </li>
                     <li>
-                        <a href="#">Notícias</a>
+                        <a href="#" onclick="document.getElementById('id03').style.display='block'">Notícias</a>
                     </li>
                     <li style="float:right;">
                         <a href="#" onclick="document.getElementById('id01').style.display='block'">Sobre Nós</a>
@@ -392,6 +392,19 @@
                             </button>
                         </p>
                     </form>
+                </div>
+            </div>
+        </section>
+        <section name="modal-noticias">
+            <div id="id03" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                    <header class="w3-container w3-pale-green">
+                        <span onclick="document.getElementById('id03').style.display='none'"
+                            class="w3-button w3-display-topright">&times;</span>
+                        <h2>Canal de Noticias</h2>
+                    </header>
+                    <iframe width="900" height="520" src="https://rss.app/embed/v1/imageboard/t8ZSuImKd5Byr0pd"
+                        frameborder="0"></iframe>
                 </div>
             </div>
         </section>
